@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-launch-programs": {
+    "space-launch-programs": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-launch-programs",
+            "outputPath": "dist/space-launch-programs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-launch-programs:build"
+            "browserTarget": "space-launch-programs:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-launch-programs:build:production"
+              "browserTarget": "space-launch-programs:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-launch-programs:build"
+            "browserTarget": "space-launch-programs:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-launch-programs:serve"
+            "devServerTarget": "space-launch-programs:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-launch-programs:serve:production"
+              "devServerTarget": "space-launch-programs:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-launch-programs"
+  "defaultProject": "space-launch-programs"
 }
